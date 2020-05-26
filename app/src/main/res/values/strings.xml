@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FBLA_Project2</string>
+    <string name="about_fbla">About FBLA</string>
+    <string name="contact_FBLA">Contact FBLA</string>
+    <string name="calendar">Calendar</string>
+    <string name="join_fbla">Join FBLA</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="home_button">Home Button</string>
+    <string name="title">FBLA Manager</string>
+    <string name="terms_service">Terms of Service</string>
+    <string name="attendance">Attendance</string>
+    <string name="calendar2">Calendar</string>
+</resources>

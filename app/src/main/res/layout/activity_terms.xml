@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#5290df"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".terms">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="446dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:text="Terms of Service"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="513dp"
+        android:layout_height="450dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginRight="67dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text='By accessing this app, you are agreeing to be bound by the app Terms and Conditions of Service, the Privacy Policy, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. We may modify these Terms and Conditions at any time without notice to you by posting revised Terms and Conditions of Service. Your use of the app constitutes your binding acceptance of these Terms and Conditions of Service, including any modifications that we make. If you do not agree with any of these terms, you are prohibited from using or accessing the app. The materials contained in this app are protected by applicable copyright and trademark law. The Service includes a combination of content that we create and that other third party content suppliers create. You understand that the Service are provided "AS IS", and that does not guarantee the accuracy, integrity or quality of any content available on the app. '
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
