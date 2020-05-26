@@ -11,6 +11,7 @@ public class link extends AppCompatActivity {
     private WebView link;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Sets up layout of link page
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_link);
         setTitle("Linkedin");
@@ -21,13 +22,14 @@ public class link extends AppCompatActivity {
         link.getSettings().setSupportZoom(true);
         link.getSettings().setLoadWithOverviewMode(true);
         link.getSettings().setBuiltInZoomControls(true);
-
+        //Loads the URL for the FBLA Linkedin
         webSettings.setJavaScriptEnabled(true);
         link.loadUrl("https://www.linkedin.com/company/fbla-pbl");
         link.setWebViewClient(new WebViewClient());
     }
 
     @Override
+    //Lets the user back out of the page
     public void onBackPressed() {
         if (link.canGoBack()) {
             link.goBack();

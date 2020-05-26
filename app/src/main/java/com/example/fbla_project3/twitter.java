@@ -12,6 +12,7 @@ public class twitter extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Sets the layout of the page
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_twitter);
         setTitle("Twitter");
@@ -22,13 +23,14 @@ public class twitter extends AppCompatActivity {
         twitter.getSettings().setSupportZoom(true);
         twitter.getSettings().setLoadWithOverviewMode(true);
         twitter.getSettings().setBuiltInZoomControls(true);
-
+        //Loads the URL of FBLA Twitter
         webSettings.setJavaScriptEnabled(true);
         twitter.loadUrl("https://twitter.com/fbla_national?lang=en");
         twitter.setWebViewClient(new WebViewClient());
     }
 
     @Override
+    //Lets the user back out of the page
     public void onBackPressed() {
         if (twitter.canGoBack()){
             twitter.goBack();

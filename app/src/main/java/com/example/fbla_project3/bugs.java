@@ -12,10 +12,12 @@ public class bugs extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Sets up the layout of the bug page
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bugs);
-
+        //Sets up the submit button
         submit = (Button)findViewById(R.id.submit);
+        //Submits the bug report to app
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

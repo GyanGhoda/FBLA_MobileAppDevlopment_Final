@@ -11,6 +11,7 @@ public class facebook extends AppCompatActivity {
     private WebView facebook;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Sets up the layout of the Facebook page
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_facebook);
         setTitle("Facebook");
@@ -21,13 +22,14 @@ public class facebook extends AppCompatActivity {
         facebook.getSettings().setSupportZoom(true);
         facebook.getSettings().setLoadWithOverviewMode(true);
         facebook.getSettings().setBuiltInZoomControls(true);
-
+        //Loads the URL for the FBLA Facebook
         webSettings.setJavaScriptEnabled(true);
         facebook.loadUrl("https://www.facebook.com/FutureBusinessLeaders/");
         facebook.setWebViewClient(new WebViewClient());
     }
 
     @Override
+    //Lets the user back out of page
     public void onBackPressed() {
         if (facebook.canGoBack()){
             facebook.goBack();

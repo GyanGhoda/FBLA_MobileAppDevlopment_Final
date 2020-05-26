@@ -13,10 +13,12 @@ public class login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Sets up layout of login page
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         login = (Button)findViewById(R.id.login);
         signup = (Button)findViewById(R.id.signup);
+        //Sets up the intents and listeners for each of the buttons
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

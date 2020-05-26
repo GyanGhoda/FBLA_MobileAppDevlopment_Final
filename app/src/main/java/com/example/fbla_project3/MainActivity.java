@@ -24,9 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Sets layout of the Home page
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //Instantiates all of the buttons on the page
         about_fbla = (Button)findViewById(R.id.about_fbla);
         calendar = (Button)findViewById(R.id.calendar);
         sign_up = (Button)findViewById(R.id.sign_up);
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         facebook = (ImageButton)findViewById(R.id.facebook);
         terms = (TextView)findViewById(R.id.terms_service);
         bugs = (TextView)findViewById(R.id.bugs);
-
+        //Sets up the intents and listeners for each of the buttons
         about_fbla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

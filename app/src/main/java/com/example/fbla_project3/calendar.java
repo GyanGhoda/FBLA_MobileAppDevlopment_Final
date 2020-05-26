@@ -15,12 +15,13 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 public class calendar extends AppCompatActivity {
-
+    //Sets up the calendar layout by instantiating the variables
     CompactCalendarView compactCalendar;
     private SimpleDateFormat dateFormatMonth = new SimpleDateFormat("MMMM- yyyy", Locale.getDefault());
     ActionBar actionBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Creates the calendar
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calendar);
 
@@ -34,7 +35,7 @@ public class calendar extends AppCompatActivity {
 
         Event ev1 = new Event(Color.RED, 1477040400000L, "FBLA SLC Event");
         compactCalendar.addEvent(ev1);
-
+        //Creates the calender dates and events
         compactCalendar.setListener(new CompactCalendarView.CompactCalendarViewListener() {
             @Override
             public void onDayClick(Date dateClicked) {
@@ -49,6 +50,7 @@ public class calendar extends AppCompatActivity {
             }
 
             @Override
+            //Lets the user scroll through the calender
             public void onMonthScroll(Date firstDayOfNewMonth) {
                 actionBar.setTitle(dateFormatMonth.format(firstDayOfNewMonth));
             }

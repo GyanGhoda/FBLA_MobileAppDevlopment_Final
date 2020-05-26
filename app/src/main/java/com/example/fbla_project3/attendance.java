@@ -12,6 +12,7 @@ public class attendance extends AppCompatActivity {
     private WebView attendance_form;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Sets up the layout of the attendance page
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
@@ -23,13 +24,14 @@ public class attendance extends AppCompatActivity {
         attendance_form.getSettings().setSupportZoom(true);
         attendance_form.getSettings().setLoadWithOverviewMode(true);
         attendance_form.getSettings().setBuiltInZoomControls(true);
-
+        //Loads the webpage for attendance
         webSettings.setJavaScriptEnabled(true);
         attendance_form.loadUrl("https://gyanghoda.github.io/android_attendance/");
         attendance_form.setWebViewClient(new WebViewClient());
     }
 
     @Override
+    //Lets the user back out of the page
     public void onBackPressed() {
         if (attendance_form.canGoBack()){
             attendance_form.goBack();

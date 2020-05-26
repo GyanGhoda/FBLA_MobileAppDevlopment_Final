@@ -17,6 +17,7 @@ public class sign_up extends AppCompatActivity {
     private WebView signup_form;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Sets the layout of the sign_up page
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
@@ -29,13 +30,14 @@ public class sign_up extends AppCompatActivity {
         signup_form.getSettings().setSupportZoom(true);
         signup_form.getSettings().setLoadWithOverviewMode(true);
         signup_form.getSettings().setBuiltInZoomControls(true);
-
+        //Loads the google form for the page
         webSettings.setJavaScriptEnabled(true);
         signup_form.loadUrl("https://docs.google.com/forms/d/1p5JbgiGg-ncnqqoHhOUQ036-mmbmCrz4T5FHyD_obP8");
         signup_form.setWebViewClient(new WebViewClient());
     }
 
     @Override
+    //Lets the user back out of page
     public void onBackPressed() {
         if (signup_form.canGoBack()){
             signup_form.goBack();
