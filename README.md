@@ -2,7 +2,7 @@
 
 Welcome to our FBLA Manager App!
 
-##Instructions
+## Instructions
 
 To run the app, follow the instructions:
 
