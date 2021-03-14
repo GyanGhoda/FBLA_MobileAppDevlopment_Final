@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".sign_up">
+    tools:context=".about_poppin">
 
     <WebView
-        android:id="@+id/web"
+        android:id="@+id/about_fbla_page"
         android:layout_width="599dp"
         android:layout_height="960dp"
         tools:layout_editor_absoluteX="1dp"
