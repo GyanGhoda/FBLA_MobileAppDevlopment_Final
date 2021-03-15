@@ -43,35 +43,35 @@ public class MainActivity extends AppCompatActivity {
         about_fbla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_about_fbla = new Intent(MainActivity.this, about_fbla.class);
+                Intent intent_about_fbla = new Intent(MainActivity.this, about_poppin.class);
                 startActivity(intent_about_fbla);
             }
         });
         calendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_calendar = new Intent(MainActivity.this, calendar.class);
+                Intent intent_calendar = new Intent(MainActivity.this, friends.class);
                 startActivity(intent_calendar);
             }
         });
         sign_up.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_sign_up = new Intent(MainActivity.this, sign_up.class);
+                Intent intent_sign_up = new Intent(MainActivity.this, profile.class);
                 startActivity(intent_sign_up);
             }
         });
         attendance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_attendance = new Intent(MainActivity.this, attendance.class);
+                Intent intent_attendance = new Intent(MainActivity.this, code_of_ethics.class);
                 startActivity(intent_attendance);
             }
         });
         contact_fbla.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent_contact_fbla = new Intent(MainActivity.this, contact_fbla.class);
+                Intent intent_contact_fbla = new Intent(MainActivity.this, feed.class);
                 startActivity(intent_contact_fbla);
             }
         });

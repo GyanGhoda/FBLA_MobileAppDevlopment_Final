@@ -8,8 +8,8 @@
 
     <WebView
         android:id="@+id/web"
-        android:layout_width="599dp"
-        android:layout_height="960dp"
-        tools:layout_editor_absoluteX="1dp"
+        android:layout_width="410dp"
+        android:layout_height="732dp"
+        tools:layout_editor_absoluteX="3dp"
         tools:layout_editor_absoluteY="1dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

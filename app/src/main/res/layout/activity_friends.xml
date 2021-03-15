@@ -5,42 +5,119 @@
     android:background="#5290df"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".calendar">
+    tools:context=".friends">
 
-    <com.github.sundeepk.compactcalendarview.CompactCalendarView
-        android:id="@+id/compactcalendar_view"
-        android:layout_width="599dp"
-        android:layout_height="269dp"
-        android:layout_marginTop="102dp"
-        android:layout_marginBottom="472dp"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        app:compactCalendarBackgroundColor="#ffe95451"
-        app:compactCalendarCurrentDayBackgroundColor="#B71C1C"
-        app:compactCalendarCurrentSelectedDayBackgroundColor="#E57373"
-        app:compactCalendarMultiEventIndicatorColor="#fff"
-        app:compactCalendarTargetHeight="250dp"
-        app:compactCalendarTextColor="#fff"
-        app:compactCalendarTextSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="96dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="25dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calendar" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/harold" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="96dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:srcCompat="@drawable/toddhoward1" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="96dp"
+        android:layout_height="93dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:srcCompat="@drawable/jensen" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="296dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginRight="115dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
-        android:id="@+id/calendar"
-        android:layout_width="268dp"
-        android:layout_height="103dp"
-        android:layout_marginStart="165dp"
-        android:layout_marginLeft="165dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="168dp"
-        android:layout_marginRight="168dp"
-        android:textSize="50sp"
-        android:gravity="center_vertical|center_horizontal"
-        android:text="@string/calendar2"
+        android:id="@+id/textView16"
+        android:layout_width="249dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginRight="196dp"
+        android:text="Harold"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="249dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginRight="196dp"
+        android:text="Todd Howard"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="249dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginRight="196dp"
+        android:text="Jensen"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="306dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Add Friend"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="52dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="199dp"
+        android:layout_marginRight="199dp"
+        android:src="@drawable/plus_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText10"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
 </androidx.constraintlayout.widget.ConstraintLayout>

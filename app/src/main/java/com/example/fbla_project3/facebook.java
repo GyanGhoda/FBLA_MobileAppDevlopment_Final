@@ -22,9 +22,9 @@ public class facebook extends AppCompatActivity {
         facebook.getSettings().setSupportZoom(true);
         facebook.getSettings().setLoadWithOverviewMode(true);
         facebook.getSettings().setBuiltInZoomControls(true);
-        //Loads the URL for the FBLA Facebook
+        //Loads the URL for Facebook
         webSettings.setJavaScriptEnabled(true);
-        facebook.loadUrl("https://www.facebook.com/FutureBusinessLeaders/");
+        facebook.loadUrl("https://www.facebook.com");
         facebook.setWebViewClient(new WebViewClient());
     }
 

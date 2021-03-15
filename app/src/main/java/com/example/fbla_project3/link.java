@@ -22,9 +22,9 @@ public class link extends AppCompatActivity {
         link.getSettings().setSupportZoom(true);
         link.getSettings().setLoadWithOverviewMode(true);
         link.getSettings().setBuiltInZoomControls(true);
-        //Loads the URL for the FBLA Linkedin
+        //Loads the URL for the Linkedin
         webSettings.setJavaScriptEnabled(true);
-        link.loadUrl("https://www.linkedin.com/company/fbla-pbl");
+        link.loadUrl("https://www.linkedin.com");
         link.setWebViewClient(new WebViewClient());
     }
 

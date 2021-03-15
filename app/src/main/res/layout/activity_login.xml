@@ -51,7 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fbla_pic" />
+        app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/editText"
@@ -91,13 +91,14 @@
         android:layout_height="59dp"
         android:layout_marginStart="267dp"
         android:layout_marginLeft="267dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="275dp"
         android:layout_marginRight="275dp"
-        android:text="Login"
         android:gravity="center_vertical|center_horizontal"
+        android:text="Login"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 

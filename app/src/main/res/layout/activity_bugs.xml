@@ -15,12 +15,12 @@
         android:layout_marginLeft="92dp"
         android:layout_marginEnd="94dp"
         android:layout_marginRight="94dp"
-        android:layout_marginBottom="608dp"
+        android:layout_marginBottom="380dp"
         android:text="Submit"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -29,14 +29,14 @@
         android:layout_height="103dp"
         android:layout_marginStart="85dp"
         android:layout_marginLeft="85dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="128dp"
         android:layout_marginEnd="70dp"
         android:layout_marginRight="70dp"
         android:gravity="center_vertical|center_horizontal"
         android:text="Report Bugs"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.436"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -48,11 +48,11 @@
         android:layout_marginLeft="191dp"
         android:layout_marginEnd="192dp"
         android:layout_marginRight="192dp"
-        android:layout_marginBottom="700dp"
-        android:textSize="20sp"
+        android:layout_marginBottom="552dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Provide a Report Here"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

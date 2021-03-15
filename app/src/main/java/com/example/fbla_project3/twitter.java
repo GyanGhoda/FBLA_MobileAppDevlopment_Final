@@ -23,9 +23,9 @@ public class twitter extends AppCompatActivity {
         twitter.getSettings().setSupportZoom(true);
         twitter.getSettings().setLoadWithOverviewMode(true);
         twitter.getSettings().setBuiltInZoomControls(true);
-        //Loads the URL of FBLA Twitter
+        //Loads the URL of Twitter
         webSettings.setJavaScriptEnabled(true);
-        twitter.loadUrl("https://twitter.com/fbla_national?lang=en");
+        twitter.loadUrl("https://twitter.com");
         twitter.setWebViewClient(new WebViewClient());
     }
 

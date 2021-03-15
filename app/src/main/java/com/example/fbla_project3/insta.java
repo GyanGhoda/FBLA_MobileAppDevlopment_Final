@@ -22,9 +22,9 @@ public class insta extends AppCompatActivity {
         instagram.getSettings().setSupportZoom(true);
         instagram.getSettings().setLoadWithOverviewMode(true);
         instagram.getSettings().setBuiltInZoomControls(true);
-        //Loads the URL of the FBLA Instagram
+        //Loads the URL of the Instagram
         webSettings.setJavaScriptEnabled(true);
-        instagram.loadUrl("https://www.instagram.com/fbla_pbl/?hl=en");
+        instagram.loadUrl("https://www.instagram.com");
         instagram.setWebViewClient(new WebViewClient());
     }
 
